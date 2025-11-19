@@ -1,0 +1,169 @@
+/* ============================================================
+   Глобальный шрифт — более жирный и читаемый
+   ============================================================ */
+* {
+    font-family: "Segoe UI";
+    font-size: 15px;
+    font-weight: 600;       /* плотный, но не "кричащий" */
+    color: #333333;         /* более насыщенный текст */
+}
+
+/* ===== Основной фон ===== */
+QMainWindow {
+    background-color: #EFEFEF;
+}
+
+/* ============================================================
+   Меню бар
+   ============================================================ */
+QMenuBar {
+    background: #F4ECD9;
+    color: #333333;
+    padding: 6px;
+    font-size: 15px;
+    border-bottom: 1px solid #E8D5B7;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 14px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+QMenuBar::item:selected {
+    background: #EAC7B9; /* пастельный розовый */
+    color: #2a2a2a;
+}
+
+/* ============================================================
+   Выпадающее меню
+   ============================================================ */
+QMenu {
+    background: #FFFFFF;
+    color: #333333;
+    border: 1px solid #D9D9D9;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+QMenu::item {
+    padding: 6px 18px;
+    border-radius: 8px;
+}
+
+QMenu::item:selected {
+    background: #C9DABF; /* пастельный зелёный */
+    color: #222222;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #E0E0E0;
+    margin: 6px 8px;
+}
+
+/* ============================================================
+   Статусбар — координаты X/Y
+   ============================================================ */
+QStatusBar {
+    background: #F4ECD9;
+    color: #222222;      /* максимально читаемый */
+    border-top: 1px solid #E8D5B7;
+    font-size: 15px;
+    font-weight: 700;    /* жирнее, чтобы координаты были заметны */
+    padding: 4px;
+}
+
+QStatusBar QLabel {
+    padding: 2px 8px;
+    color: #222222;
+    font-weight: 700;
+}
+
+/* ============================================================
+   Кнопки
+   ============================================================ */
+QPushButton {
+    background: #D9EAD3;      /* мягкая мята */
+    border: none;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: 600;         /* делаем текст заметным */
+    color: #333333;
+    border-radius: 12px;
+}
+
+QPushButton:hover {
+    background: #C9DABF;
+}
+
+QPushButton:pressed {
+    background: #B7DDE9;      /* мягкий голубой */
+}
+
+/* ============================================================
+   Поля ввода
+   ============================================================ */
+QLineEdit {
+    background: #FFFFFF;
+    padding: 6px 10px;
+    border: 1px solid #CFCFCF;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+QLineEdit:focus {
+    border: 1px solid #7AA0D2;
+}
+
+/* ============================================================
+   Скроллбары
+   ============================================================ */
+QScrollBar:vertical {
+    border: none;
+    background: #EFEFEF;
+    width: 12px;
+    margin: 6px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background: #C9DABF;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #B7DDE9;
+}
+
+/* ============================================================
+   Таблицы
+   ============================================================ */
+QTableWidget {
+    background: #FFFFFF;
+    gridline-color: #DCDCDC;
+    selection-background-color: #EAC7B9;
+}
+
+QHeaderView::section {
+    background: #F4ECD9;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+}
+
+/* ============================================================
+   Диалоговые окна
+   ============================================================ */
+QMessageBox {
+    background: #FFFFFF;
+}
+
+QDialog {
+    background: #FFFFFF;
+}
