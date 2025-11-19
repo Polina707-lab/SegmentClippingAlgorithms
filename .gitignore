@@ -1,0 +1,36 @@
+# Build folders
+build/
+build-*/
+cmake-build-*/
+
+# Qt Creator
+*.user
+*.pro.user
+*.autosave
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# VS Code config
+.vscode/
+
+# Compiled binaries
+*.exe
+*.out
+*.obj
+*.o
+
+# Qt moc, uic, rcc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.moc
+
+# Docker layers (optional)
+*.tar
+
+# Logs
+*.log
